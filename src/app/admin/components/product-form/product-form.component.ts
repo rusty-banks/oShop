@@ -1,4 +1,4 @@
-import { Product } from 'shared/models/product';
+// import { Product } from 'shared/models/product';
 import { ProductService } from 'shared/services/product.service';
 import { CategoryService } from 'shared/services/category.service';
 import { Component } from '@angular/core';
@@ -11,7 +11,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ProductFormComponent {
   categories$;
-  product: Product;
+  // product: Product;
+  product = {}; // To avoid errors in the console while waiting for the aync operation to complete
   id;
 
   constructor(
